@@ -1,14 +1,13 @@
 module.exports = {
     env: {
-        browser: true,
         es2021: true,
+        node: true,
     },
-    extends: ["plugin:vue/essential", "google", "prettier", "prettier/vue"],
+    extends: ["google"],
     parserOptions: {
         ecmaVersion: 12,
         sourceType: "module",
     },
-    plugins: ["vue"],
     rules: {
         quotes: ["error", "double"],
         indent: ["error", 4, { SwitchCase: 1 }],

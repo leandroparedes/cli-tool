@@ -24,5 +24,10 @@
         "commander": "^6.2.1",
         "ncp": "^2.0.0",
         "replace-in-file": "^6.1.0"
+    },
+    "devDependencies": {
+        "eslint": "^7.17.0",
+        "eslint-config-google": "^0.14.0",
+        "eslint-config-prettier": "^7.1.0"
     }
 }
