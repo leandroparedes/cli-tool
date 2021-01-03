@@ -1,8 +1,11 @@
 {
     "name": "@leandroparedes/cli-tool",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Code generation cli tool",
-    "keywords": ["cli", "code generation"],
+    "keywords": [
+        "cli",
+        "code generation"
+    ],
     "homepage": "https://github.com/leandroparedes/cli-tool#readme",
     "bugs": {
         "url": "https://github.com/leandroparedes/cli-tool/issues"
