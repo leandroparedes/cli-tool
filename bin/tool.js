@@ -7,9 +7,8 @@ program
     .description("CLI Tool program for development workflow");
 
 program
-    .command("create <module-name>")
+    .command("create-module <module-name>")
     .description("Create a new module")
-    .option("-s, --store", "Add vuex module")
     .action((moduleName, cmd) => {
         const options = cleanArgs(cmd);
 
