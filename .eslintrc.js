@@ -3,7 +3,7 @@ module.exports = {
         es2021: true,
         node: true,
     },
-    extends: ["google"],
+    extends: ["google", "prettier"],
     parserOptions: {
         ecmaVersion: 12,
         sourceType: "module",
