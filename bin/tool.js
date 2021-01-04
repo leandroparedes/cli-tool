@@ -18,7 +18,7 @@ program
 
 program
     .command("store:create <store-name>")
-    .description("Create a new store module")
+    .description("Create a new store")
     .option("-t, --template <template-name>", "The template to be used for creating the store")
     .action((storeName, cmd) => {
         const options = cleanArgs(cmd);
