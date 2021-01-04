@@ -7,7 +7,7 @@ program
     .description("CLI Tool program for development workflow");
 
 program
-    .command("create-module <module-name>")
+    .command("module:create <module-name>")
     .description("Create a new module")
     .action((moduleName, cmd) => {
         const options = cleanArgs(cmd);
