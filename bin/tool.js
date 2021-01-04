@@ -16,6 +16,16 @@ program
         require("../lib/create")(moduleName, options);
     });
 
+program
+    .command("store:create <store-name>")
+    .description("Create a new store module")
+    .option("-t, --template <template-name>", "The template to be used for creating the store")
+    .action((storeName, cmd) => {
+        const options = cleanArgs(cmd);
+
+        require("../lib/createStore")(storeName, options);
+    });
+
 program.parse(process.argv);
 
 function camelize(str) {

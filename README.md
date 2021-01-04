@@ -29,3 +29,19 @@ tool module:create my-module
 
 tool module:create my-module --template custom-module
 ```
+
+### store:create
+
+(should this be a plugin? @leandroparedes/cli-tool-vuex)
+
+Creates the boilerplate for a vuex store from a template specified in the `.templates/stores` folder.
+By default the `.templates/stores/default` store template will be used. You can change this behavior
+with the `--template` option. The store will be created in the `src/store/modules` folder
+
+#### Usage
+
+```
+tool store:create my-store
+
+tool store:create my-store --template custom-store
+```
