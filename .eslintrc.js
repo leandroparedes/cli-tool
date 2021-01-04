@@ -1,14 +1,13 @@
 module.exports = {
     env: {
-        browser: true,
         es2021: true,
+        node: true,
     },
-    extends: ["plugin:vue/essential", "google", "prettier", "prettier/vue"],
+    extends: ["google", "prettier"],
     parserOptions: {
         ecmaVersion: 12,
         sourceType: "module",
     },
-    plugins: ["vue"],
     rules: {
         quotes: ["error", "double"],
         indent: ["error", 4, { SwitchCase: 1 }],
@@ -17,5 +16,7 @@ module.exports = {
         "object-curly-spacing": ["error", "always"],
         "no-console": ["error", { allow: ["error"] }],
         "linebreak-style": 0,
+        "require-jsdoc": 0,
+        "quote-props": ["error", "as-needed"],
     },
 };

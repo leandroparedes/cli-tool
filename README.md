@@ -10,22 +10,22 @@ npm install --save-dev @leandroparedes/cli-tool
 
 ## Usage
 ```
-tool [options] [command]
+tool [command] [options]
 ```
 
-## Create a module
+## Commands
+
+### module:create
+
+Creates the boilerplate for a module from a template specified in the `.templates/modules` folder.
+By default the `.templates/modules/default` module template will be used. You can change this behavior
+with the `--template` option (`-t` for short). The module will be created in the `src/app` folder (the `src`
+folder must be in the root of the directory)
+
+#### Usage
 
 ```
-tool create-module <module-name>
-```
+tool module:create my-module
 
-When creating a module the tool it is going to look for a `.templates/module` folder.
-This folder should contain the structure for your module. For example
-
-```
-- .templates
-    - module
-        -pages
-            - Index.vue
-        routes.js
+tool module:create my-module --template custom-module
 ```
